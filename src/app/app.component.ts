@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+
+
+  public title: string = 'Milton Andrés Cabrera López';
+  public counter: number = 10;
+
+  increaseBy(): void {
+    this.counter += 1;
+  }
+
+  discrementBy(): void {
+    if (this.counter > 0)
+      this.counter--;
+
+  }
+
+
 }
